@@ -1,4 +1,5 @@
 
+ ![jQuery架构图](https://github.com/zero7room/jQuery_notes/blob/master/img/jQuery.jpg)
 
 JQuery整体架构
 ```
