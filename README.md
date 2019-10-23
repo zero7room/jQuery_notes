@@ -7,7 +7,6 @@
 - jQuery 选择器
 - Callbacks 原理分析
 - 延时对象 Deferred
-- 事件绑定
+- 事件绑定-bind-delegate-on
 - 事件绑定-体系结构、委托设计
-- DOM操作核心
-- 动画队列
+- 事件绑定-自定义模拟事件
