@@ -1,45 +1,13 @@
 
+ JQuery整体架构
  ![jQuery架构图](https://github.com/zero7room/jQuery_notes/blob/master/img/jQuery.jpg)
 
-JQuery整体架构
-```
-    (function(window, undefined) {
-        
-    })(window)
 
-```
-自执行函数，生成单独作用域，未传undefined，保证undefined的值
-
-- JQuery无new构建实例
-- 共享原型设计
-- extend源码分析
-
-
-```
-    var JQuery = function(){
-        return new JQuery.prototype.init()
-        
-    }
-    JQuery.fn = JQuery.prototype = {
-        init: function(){
-            
-        },
-        css: function(){
-            
-        }
-    }
-    jQuery.prototype.init.prototype = JQuery.fn;
-
-```
-给JQuery扩展方法 $.extend()
-给实例对象扩展 $.fn.extend()
-
-```
-    JQuery.fn.extend = JQuery.extend = function(){
-        
-    }
-    
-```
-通过参数个数来判断哪种用途 arguments.length
-判断数据类型
-通过this指向 JQuery 或者 JQuery实例对象
+- jQuery 整体架构
+- jQuery 选择器
+- Callbacks 原理分析
+- 延时对象 Deferred
+- 事件绑定
+- 事件绑定-体系结构、委托设计
+- DOM操作核心
+- 动画队列
